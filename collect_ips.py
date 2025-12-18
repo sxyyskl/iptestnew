@@ -5,22 +5,15 @@ import os
 
 # 目标URL列表
 urls = [
-    'https://ip.164746.xyz', 
-    'https://ip.haogege.xyz/',
-    'https://cf.090227.xyz',
-    'https://ct.090227.xyz',
-    'https://cmcc.090227.xyz',    
-    'https://cf.vvhan.com',
-    'https://stock.hostmonit.com/CloudFlareYes', 
-    'https://api.uouin.com/cloudflare.html',
-    'https://addressesapi.090227.xyz/CloudFlareYes',
-    'https://addressesapi.090227.xyz/ip.164746.xyz',
-    'https://ipdb.api.030101.xyz/?type=cfv4;proxy',
-    'https://ipdb.api.030101.xyz/?type=bestcf&country=true',
-    'https://ipdb.api.030101.xyz/?type=bestproxy&country=true',
-    'https://www.wetest.vip/page/edgeone/address_v4.html',
-    'https://www.wetest.vip/page/cloudfront/address_v4.html',
-    'https://www.wetest.vip/page/cloudflare/address_v4.html'
+    'proxyip.fxxk.dedyn.io',
+    'proxyip.us.fxxk.dedyn.io',
+    'proxyip.sg.fxxk.dedyn.io',
+    'proxyip.jp.fxxk.dedyn.io',
+    'proxyip.hk.fxxk.dedyn.io',
+    'proxyip.aliyun.fxxk.dedyn.io',
+    'proxyip.oracle.fxxk.dedyn.io',
+    'proxyip.digitalocean.fxxk.dedyn.io',
+    'proxyip.oracle.cmliussss.net'
 ]
 
 # 正则表达式用于匹配IP地址
