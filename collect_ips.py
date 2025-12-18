@@ -7,20 +7,20 @@ import os
 urls = [
     'proxyip.fxxk.dedyn.io',
     'proxyip.us.fxxk.dedyn.io',
-    'proxyip.sg.fxxk.dedyn.io'
-    'proxyip.jp.fxxk.dedyn.io'
-    'proxyip.hk.fxxk.dedyn.io'
-    'proxyip.aliyun.fxxk.dedyn.io'
-    'proxyip.oracle.fxxk.dedyn.io'
-    代理IP 数字海洋 fxxk dedyn.io
-    'https://raw.githubusercontent.com/KafeMars/best-ips-domains/refs/heads/main/US_BestProxyIPs.txt'
-    'https://raw.githubusercontent.com/xgonce/CF-Proxyip/refs/heads/main/proxyip.txt'
-    'bpb.yousef.isegaro.com'
-    'proxyip.us.cmliussss.net'
-    'proxyip.jp.cmliussss.net'
-    'proxyip.hk.cmliussss.net'
-    'proxyip.de.cmliussss.net'
-    'proxyip.sg.cmliussss.net'
+    'proxyip.sg.fxxk.dedyn.io',
+    'proxyip.jp.fxxk.dedyn.io',
+    'proxyip.hk.fxxk.dedyn.io',
+    'proxyip.aliyun.fxxk.dedyn.io',
+    'proxyip.oracle.fxxk.dedyn.io',
+    'proxyip.digitalocean.fxxk.dedyn.io',
+    'https://raw.githubusercontent.com/KafeMars/best-ips-domains/refs/heads/main/US_BestProxyIPs.txt',
+    'https://raw.githubusercontent.com/xgonce/CF-Proxyip/refs/heads/main/proxyip.txt',
+    'bpb.yousef.isegaro.com',
+    'proxyip.us.cmliussss.net',
+    'proxyip.jp.cmliussss.net',
+    'proxyip.hk.cmliussss.net',
+    'proxyip.de.cmliussss.net',
+    'proxyip.sg.cmliussss.net',
     'proxyip.oracle.cmliussss.net'
 ]
 
@@ -37,10 +37,10 @@ unique_ips = set()
 for url in urls:
     try:
         # 发送HTTP请求获取网页内容
-        response = requests.get(url, timeout=5)
+        response = requests.get(url, timeout=10)
         
         # 确保请求成功
-        if response.status_code == 200:
+        if response.status_code == 400:
             # 获取网页的文本内容
             html_content = response.text
             
