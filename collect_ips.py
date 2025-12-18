@@ -13,6 +13,8 @@ urls = [
     'proxyip.aliyun.fxxk.dedyn.io',
     'proxyip.oracle.fxxk.dedyn.io',
     'proxyip.digitalocean.fxxk.dedyn.io',
+    'https://raw.githubusercontent.com/KafeMars/best-ips-domains/refs/heads/main/US_BestProxyIPs.txt',
+    'https://raw.githubusercontent.com/xgonce/CF-Proxyip/refs/heads/main/proxyip.txt',
     'proxyip.oracle.cmliussss.net'
 ]
 
