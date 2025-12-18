@@ -1,7 +1,7 @@
-导入 requests
-从 bs4 导入 BeautifulSoup
-导入 re
-导入 os
+import requests
+from bs4 import BeautifulSoup
+import re
+import os
 
 # 目标URL列表
 urls = [
@@ -37,10 +37,10 @@ unique_ips = set()
 for url in urls:
     try:
         # 发送HTTP请求获取网页内容
-        response = requests.get(url, timeout=5)
+        response = requests.get(url, timeout=10)
         
         # 确保请求成功
-        if response.status_code == 200:
+        if response.status_code == 400:
             # 获取网页的文本内容
             html_content = response.text
             
