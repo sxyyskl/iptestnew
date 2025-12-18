@@ -40,7 +40,7 @@ for url in urls:
         response = requests.get(url, timeout=10)
         
         # 确保请求成功
-        if response.status_code == 400:
+        if response.status_code == 300:
             # 获取网页的文本内容
             html_content = response.text
             
