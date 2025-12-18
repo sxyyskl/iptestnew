@@ -1,9 +1,9 @@
 导入 requests
-from bs4 import BeautifulSoup
-import re
-import os
+从 bs4 导入 BeautifulSoup
+导入 re
+导入 os
 
-#目标URL列表
+# 目标URL列表
 urls = [
     'proxyip.fxxk.dedyn.io',
     'proxyip.us.fxxk.dedyn.io',
@@ -22,17 +22,17 @@ urls = [
     'proxyip.de.cmliussss.net'
     'proxyip.sg.cmliussss.net'
     'proxyip.oracle.cmliussss.net'
-输入：]
+]
 
 # 正则表达式用于匹配IP地址
-ip_pattern = r'\\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\\b'
+ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
 
-# 检查ip.txt文件是否存在，如果存在则删除它
-如果 os.path.存在('ip.txt'):
+# 检查ip.txt文件是否存在,如果存在则删除它
+if os.path.exists('ip.txt'):
     os.remove('ip.txt')
 
 # 使用集合存储IP地址实现自动去重
-唯一IP数量 = 集合()
+unique_ips = set()
 
 for url in urls:
     try:
