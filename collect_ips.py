@@ -1,10 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
-import re
-import os
+导入 请求
+从 bs4 导入 BeautifulSoup
+导入 re
+导入 os
 
 # 目标URL列表
-urls = [
+"urls = "
     'proxyip.fxxk.dedyn.io',
     'proxyip.us.fxxk.dedyn.io',
     'proxyip.sg.fxxk.dedyn.io',
@@ -15,21 +15,27 @@ urls = [
     'proxyip.digitalocean.fxxk.dedyn.io',
     'https://raw.githubusercontent.com/KafeMars/best-ips-domains/refs/heads/main/US_BestProxyIPs.txt',
     'https://raw.githubusercontent.com/xgonce/CF-Proxyip/refs/heads/main/proxyip.txt',
+    'bpb.yousef.isegaro.com',
+    'proxyip.us.cmliussss.net',
+    'proxyip.jp.cmliussss.net',
+    'proxyip.hk.cmliussss.net',
+    'proxyip.de.cmliussss.net',
+    'proxyip.sg.cmliussss.net',
     'proxyip.oracle.cmliussss.net'
-]
+输入：]
 
 # 正则表达式用于匹配IP地址
-ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
+ip_pattern = r'\\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\\b'
 
 # 检查ip.txt文件是否存在,如果存在则删除它
-if os.path.exists('ip.txt'):
+如果 os.path.存在('ip.txt'):
     os.remove('ip.txt')
 
 # 使用集合存储IP地址实现自动去重
-unique_ips = set()
+unique_ips = 集合()
 
-for url in urls:
-    try:
+对于网址在网址列表中：
+    尝试:
         # 发送HTTP请求获取网页内容
         response = requests.get(url, timeout=5)
         
