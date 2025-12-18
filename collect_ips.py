@@ -37,7 +37,7 @@ unique_ips = set()
 for url in urls:
     try:
         # 发送HTTP请求获取网页内容
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=5)
         
         # 确保请求成功
         if response.status_code == 400:
