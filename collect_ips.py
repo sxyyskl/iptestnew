@@ -12,7 +12,7 @@ urls = [
     'proxyip.hk.fxxk.dedyn.io',
     'proxyip.aliyun.fxxk.dedyn.io',
     'proxyip.oracle.fxxk.dedyn.io',
-    'proxyip цифровой океан fxxk dedyn.io',
+    '代理IP 数字海洋 fxxk dedyn.io',
     'https://raw.githubusercontent.com/KafeMars/best-ips-domains/refs/heads/main/US_BestProxyIPs.txt',
     'https://raw.githubusercontent.com/xgonce/CF-Proxyip/refs/heads/main/proxyip.txt',
     'bpb.yousef.isegaro.com',
@@ -22,17 +22,17 @@ urls = [
     'proxyip.de.cmliussss.net',
     'proxyip.sg.cmliussss.net',
     'proxyip.oracle.cmliussss.net'
- ]
+ 输入：]
 
 # 正则表达式用于匹配IP地址
-ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
+ip_pattern = r'\\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\\b'
 
-# 检查ip.txt文件是否存在,如果存在则删除它
-if os.path.exists('ip.txt'):
+# 检查ip.txt文件是否存在，如果存在则删除它
+如果 os.path.存在('ip.txt'):
     os.remove('ip.txt')
 
 # 使用集合存储IP地址实现自动去重
-unique_ips = set()
+唯一IP数量 = 集合()
 
 for url in urls:
     try:
@@ -40,7 +40,7 @@ for url in urls:
         response = requests.get(url, timeout=5)
         
         # 确保请求成功
-        if response.status_code == 200:
+        if response.status_code == 400:
             # 获取网页的文本内容
             html_content = response.text
             
